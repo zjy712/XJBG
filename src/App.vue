@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <one msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
+
+<script>
+import one from './views/one.vue'
+
+export default {
+  name: 'app',
+  components: {
+    one
+  }
+}
+</script>
 
 <style>
 #app {
